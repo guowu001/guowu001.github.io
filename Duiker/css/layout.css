@@ -1,0 +1,21 @@
+.banner{  width:100%; height:auto;  }
+.bannerimg{ float:left; height:387px; width:100%; overflow:hidden; position:relative; z-index:30;}
+#changeimg{  overflow:hidden; height:387px; width:1920px; position:absolute; left:50%; margin-left:-960px;}
+.changebtn{position:absolute; z-index:200; left:50%; bottom:20px; height:21px; width:200px; overflow:hidden; float:right; margin-left:-36px; } 
+.changebtn a{ float:left; cursor:pointer; height:21px; margin:0 1px; cursor:pointer; width:21px; background:url(../img/dot1.png) no-repeat; margin-right:5px; text-indent:-999px}
+.changebtn a.activeSlide{ float:left; cursor:pointer; height:21px; margin:0 1px; cursor:pointer; width:21px; background:url(../img/dot2.png) no-repeat; margin-right:5px;}
+
+.index_text{ width:100%; height:auto; margin-top:410px;}
+.innerindex_text{ width:1030px; height:auto; margin:0 auto;}
+.newleft{ float:left; width:530px; overflow:hidden; height:140px;}
+.newleft1{ float:left; width:440px; height:auto;}
+.newleft1 h2{ color:#e01b11; font-size:16px; font-family:"微软雅黑"; line-height:32px;}
+.newleft1 p{ color:#7b7c7f; font-size:12px; font-family:"微软雅黑"; line-height:24px;}
+.newleft2{ float:left; width:440px; height:auto; margin-top:15px;}
+.newleft2 p{ color:#666666; font-size:12px; font-family:"微软雅黑"; line-height:20px;}
+.newright{ float:right; width:200px; height:auto;}
+.newright1{ float:left; width:200px; height:auto;}
+.newright1 h2{ color:#e01b11; font-size:16px; font-family:"微软雅黑"; line-height:32px;}
+.newright1 p a{ color:#666666; font-size:12px; font-family:"微软雅黑"; line-height:24px;}
+.newright2{ float:left; width:200px; height:auto; margin-top:15px;}
+.newright2 p a{ color:#e01b11; font-size:12px; font-family:"微软雅黑"; line-height:24px;}

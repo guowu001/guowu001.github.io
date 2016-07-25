@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://guowu001.github.io/CSS3H5/3DBlast.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>3D爆炸效果</title>
+<style>
+body, html {
+	overflow: hidden;
+	height: 100%;
+}
+ul {
+	width: 700px;
+	height: 400px;
+	background: url(img/1.jpg) no-repeat;
+	margin: 50px auto;
+	position: relative;
+}
+ul span {
+	position: absolute;
+	background: url(img/0.jpg) no-repeat;
+}
+</style>
+<script>
+window.onload=function (){
+	var oBox=document.querySelector('ul');
+	
+	var C=7;
+	var R=4;
+	for(var r=0;r<R;r++)
+	{
+		for(var c=0;c<C;c++)
+		{
+			var oSpan=document.createElement('span');
+			oSpan.style.width=oBox.offsetWidth/C+'px';
+			oSpan.style.height=oBox.offsetHeight/R+'px';
+			oBox.appendChild(oSpan);
+			
+			oSpan.style.left=oSpan.offsetWidth*c+'px';
+			oSpan.style.top=oSpan.offsetHeight*r+'px';
+			oSpan.style.backgroundPosition='-'+oSpan.offsetWidth*c+'px -'+oSpan.offsetHeight*r+'px';
+		}
+	}
+	
+	var aSpan=oBox.children;
+	var iNow=0;
+	var bF=false;
+	oBox.onclick=function (){
+		if(bF) return;
+		bF=true;
+		iNow++;
+		//document.title=iNow;
+		for(var i=0;i<aSpan.length;i++)
+		{
+			aSpan[i].style.transition='1s all ease';
+			var x=aSpan[i].offsetLeft+aSpan[i].offsetWidth/2-oBox.offsetWidth/2;
+			var y=aSpan[i].offsetTop+aSpan[i].offsetHeight/2-oBox.offsetHeight/2;
+			aSpan[i].style.transform='perspective(800px) translate('+x+'px,'+y+'px) rotateX('+rnd(-180,180)+'deg) rotateY('+rnd(-180,180)+'deg) scale(1.5)';
+			aSpan[i].style.opacity=0;
+		}
+		aSpan[0].addEventListener('transitionend',function (){
+			oBox.style.backgroundImage='url(img/'+(iNow+1)%3+'.jpg)';
+			for(var i=0;i<aSpan.length;i++)
+			{
+				aSpan[i].style.transition='none';
+				aSpan[i].style.transform='perspective(800px) translate(0px,0px) rotateX(0deg) rotateY(0deg) scale(1)';
+				aSpan[i].style.opacity=1;
+				aSpan[i].style.backgroundImage='url(img/'+iNow%3+'.jpg)';
+			}
+			bF=false;
+		},false);
+			
+	};
+	
+	
+	function rnd(n,m)
+	{
+		return Math.floor(Math.random()*(m-n)+n);
+	}
+};
+</script>
+</head>
+
+<body>
+<ul>
+  <span style="width: 105.714px; height: 100px; left: 0px; top: 0px; background-position: 0px 0px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 106px; top: 0px; background-position: -106px 0px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 212px; top: 0px; background-position: -212px 0px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 318px; top: 0px; background-position: -318px 0px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 424px; top: 0px; background-position: -424px 0px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 530px; top: 0px; background-position: -530px 0px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 636px; top: 0px; background-position: -636px 0px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 0px; top: 100px; background-position: 0px -100px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 106px; top: 100px; background-position: -106px -100px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 212px; top: 100px; background-position: -212px -100px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 318px; top: 100px; background-position: -318px -100px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 424px; top: 100px; background-position: -424px -100px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 530px; top: 100px; background-position: -530px -100px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 636px; top: 100px; background-position: -636px -100px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 0px; top: 200px; background-position: 0px -200px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 106px; top: 200px; background-position: -106px -200px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 212px; top: 200px; background-position: -212px -200px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 318px; top: 200px; background-position: -318px -200px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 424px; top: 200px; background-position: -424px -200px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 530px; top: 200px; background-position: -530px -200px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 636px; top: 200px; background-position: -636px -200px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 0px; top: 300px; background-position: 0px -300px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 106px; top: 300px; background-position: -106px -300px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 212px; top: 300px; background-position: -212px -300px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 318px; top: 300px; background-position: -318px -300px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 424px; top: 300px; background-position: -424px -300px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 530px; top: 300px; background-position: -530px -300px;"></span>
+  <span style="width: 105.714px; height: 100px; left: 636px; top: 300px; background-position: -636px -300px;"></span>
+</ul>
+</body>
+</html>

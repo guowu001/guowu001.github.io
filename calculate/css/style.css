@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+/* 头部 */
+.header{width:32rem; height:5.1rem; background:linear-gradient(#FFF,#EBEBEB);}
+.back_btn{width:6.2rem; height:3rem; float:left; margin:1.1rem 0 0 1.05rem;}
+.logo{width:7.45rem; height:2.2rem; float:left; margin:1.45rem 0 0 5.05rem; }
+/* 广告 */
+.banner_box{width:32rem;overflow:hidden; }
+.banner_pic{width:224rem; margin-left:-32rem; }
+.banner_pic li{width:32rem; height:16rem; float:left;}
+.banner_btn{width:5rem; margin:0 auto;}
+.banner_btn li{width:0.5rem; height:0.5rem; background:#adadad; border-radius:50%; margin:1.05rem 0.25rem; float:left; cursor:pointer;}
+.banner_btn .active{background:#ff4300;}
+/* 主体开始 */
+.main{width:30rem; margin:auto; margin-top:0.75rem; }
+.menu dl{width:4rem; margin:0.75rem 1.75rem 0 1.75rem; float:left;}
+.menu dl dt{height:4rem;}
+.menu dl dd{text-align:center; line-height:3rem; }
+.menu dl dd a{ font-size:1.1rem; color:#d0d0d0;}
+/* 商品列表开始 */
+.hotlist_head{height:1.5rem; margin-top:2.25rem; line-height:1.5rem; padding-bottom:1rem; border-bottom:0.2rem solid #dcdcdc; }
+.hotlist_head span{width:0.2rem; height:1.5rem; background:#d51938; float:left;}
+.hotlist_head h2{font-size:1.2rem;  color:#333; float:left; margin-left:0.8rem;}
+.hotlist_head .top10{float:right;}
+.hotlist{ margin-top:1.55rem; line-height:6rem;}
+.hotlist li{height:6rem; margin-top:1rem; background:#f4f4f4;}
+.hotlist .num{width:3rem; float:left; }
+.hotlist .pic{width:9rem; float:left;}
+.hotlist .info{float:left;  line-height:1.75rem; margin:1rem; color:#999;}
+.hotlist .info span,i{font-size:1rem;}
+.hotlist .info i em{font-size:1rem; color:#c7223d;}
+.hotlist .info i b{font-size:1rem;  text-decoration:line-through;}
+.hotlist .price{float:right; }
+.hotlist .price em{float:left; font-size:1.2rem; font-weight:bold; color:#d51938;}
+.hotlist .price .btn_pic{width:0.6rem; height:1.1rem; float:right; margin:2.45rem 1rem;}
+/* 商品表格开始 */
+.goods_head{ text-align:center; font-size:1.2rem; line-height:4rem; background:#f5f5f5; margin:1rem 0; color:#666;}
+.goods ul{float:left;}
+.goods img{height:17.6rem; width:7.5rem; float:left;}
+.goods table{width:22.5rem; height:17.6rem; border:0.05rem solid #fff; float:left;}
+.goods table tbody tr th{border:0.05rem solid #eee; width:33.33%; }
+.goods table tbody tr th:nth-child(1){border-left:none;}
+.goods table tbody tr th a{font-size:1.2rem; font-weight:500; color:#b4b4b4;}
+.goods table tbody tr th .red{color:#d51942;}
+.goods p{width:30rem; height:4.4rem; background:#f5f5f5; margin:1rem 0 1.5rem; position:relative; float:left;}
+.goods p em{font-size:1.2rem; color:#666;  width:100%; text-align:center; line-height:4.4rem; float:left;}
+.goods p a img{width:0.6rem; height:1.1rem; position:absolute; right:1rem; top:1.65rem;}
+/* 指南开始 */
+.guild{float:left; margin:0.5rem 0 1rem;}
+.guild ul{width:10rem; float:left;}
+/* 尾部开始*/
+.bottom_nav{background:#f8f8f8; line-height:4.4rem; position:relative;}
+.bottom_nav a{font-size:1.2rem; color:#333;}
+.bottom_nav .loginbar{margin-left:1.6rem; }
+.bottom_nav .regsiter{margin-left:2.3rem;}
+.bottom_nav .top_text{width:3.1rem; height:1.2rem; font-size:1.5rem; float:right; margin-right:2.8rem;}
+.bottom_nav .top_pic{width:0.9rem; height:0.5rem; position:absolute; right:1.5rem; top:1.95rem;}
+.footer{background:#eee; text-align:center; padding:1.8rem 0 0.5rem;}
+.footer .standard,.pc{font-size:1.2rem; line-height:2.7rem; margin:0 0.6rem; color:#646464;}
+.footer .copyright,.service{font-size:1rem; line-height:2.5rem; margin:0 0.5rem; color:#999;}
+.footer .copyright img{width:0.8rem; height:0.8rem; margin-top:0.85rem;}

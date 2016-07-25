@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://guowu001.github.io/CSS3H5/3DPicRing.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>照片环</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background: #000;
+        }
+        ul{
+            width:133px;
+            height:200px;
+            position: absolute;
+            left:50%;
+            margin-left: -67px;
+            top:150px;
+
+            transform: perspective(800px) rotateX(-10deg);
+
+            transform-style: preserve-3d;
+        }
+        li{
+            position: absolute;
+            width:100%;
+            height:100%;
+            left:0;
+            top:0;
+            background: url(img1/0.jpg) no-repeat;
+            box-shadow: 0 0 10px 2px #fff;
+            border-radius: 8px;
+
+            -webkit-box-reflect: below 20px -webkit-linear-gradient(rgba(255,255,255,0)  40%, rgba(255,255,255,0.5));
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oUl=document.getElementById('ul1');
+
+            var N=11;
+
+            for(var i=0; i<N; i++){
+                var oLi=document.createElement('li');
+                oLi.style.backgroundImage='url(images/ring'+i+'.jpg)';
+                oUl.appendChild(oLi);
+
+                oLi.style.transition='1s all ease '+200*(N-i)+'ms';
+
+                (function(oLi,i){
+                    setTimeout(function(){
+                        oLi.style.transform='rotateY('+360/N*i+'deg) translateZ(350px)';
+                    },0);
+                })(oLi,i);
+            }
+
+
+            var aLi=oUl.children;
+
+            var y=0;
+            var lastY=0;
+            var iSpeedY=0;
+            var timer=null;
+
+            //发完牌
+            aLi[0].addEventListener('transitionend',function(){
+                open();
+                change();
+            });
+
+            function clear(){
+                for(var i=0; i<aLi.length; i++){
+                    aLi[i].style.transition='none';
+                }
+            }
+            function open(){
+                for(var i=0; i<aLi.length; i++){
+                    aLi[i].style.transition='1s all ease';
+                }
+            }
+
+            function change(){
+                for(var i=0; i<aLi.length; i++){
+
+                    aLi[i].style.transform='rotateY('+(360/N*i+y)+'deg) translateZ(350px)';
+
+                    var d=Math.abs((360/N*i+y)%360);
+
+                    d>180 && (d=360-d);
+
+                    d=(180-d)/180;
+
+                    d<0.2 && (d=0.2);
+
+                    aLi[i].style.opacity=d;
+
+                    //aLi[i].innerHTML=d;
+                }
+            }
+
+            //拖拽
+            document.onmousedown=function(ev){
+                clearInterval(timer);
+                clear();
+
+                var disX=ev.clientX-y;
+
+                document.onmousemove=function(ev){
+                    y=ev.clientX-disX;
+
+                   
+                    change();
+
+                    iSpeedY=y-lastY;
+
+                    lastY=y;
+                };
+
+                document.onmouseup=function(){
+                    document.onmousemove=null;
+                    document.onmouseup=null;
+
+                    timer=setInterval(function(){
+                        iSpeedY*=0.95;
+
+                        y+=iSpeedY;
+
+                        change();
+                    },30);
+                };
+                return false;
+            };
+        };
+    </script>
+</head>
+<body>
+    <ul id="ul1">
+
+    <li style="transition: none; transform: rotateY(0deg) translateZ(350px); opacity: 1; background-image: url(&quot;images/ring0.jpg&quot;);"></li><li style="transition: none; transform: rotateY(32.7273deg) translateZ(350px); opacity: 0.818182; background-image: url(&quot;images/ring1.jpg&quot;);"></li><li style="transition: none; transform: rotateY(65.4545deg) translateZ(350px); opacity: 0.636364; background-image: url(&quot;images/ring2.jpg&quot;);"></li><li style="transition: none; transform: rotateY(98.1818deg) translateZ(350px); opacity: 0.454545; background-image: url(&quot;images/ring3.jpg&quot;);"></li><li style="transition: none; transform: rotateY(130.909deg) translateZ(350px); opacity: 0.272727; background-image: url(&quot;images/ring4.jpg&quot;);"></li><li style="transition: none; transform: rotateY(163.636deg) translateZ(350px); opacity: 0.2; background-image: url(&quot;images/ring5.jpg&quot;);"></li><li style="transition: none; transform: rotateY(196.364deg) translateZ(350px); opacity: 0.2; background-image: url(&quot;images/ring6.jpg&quot;);"></li><li style="transition: none; transform: rotateY(229.091deg) translateZ(350px); opacity: 0.272727; background-image: url(&quot;images/ring7.jpg&quot;);"></li><li style="transition: none; transform: rotateY(261.818deg) translateZ(350px); opacity: 0.454545; background-image: url(&quot;images/ring8.jpg&quot;);"></li><li style="transition: none; transform: rotateY(294.545deg) translateZ(350px); opacity: 0.636364; background-image: url(&quot;images/ring9.jpg&quot;);"></li><li style="transition: none; transform: rotateY(327.273deg) translateZ(350px); opacity: 0.818182; background-image: url(&quot;images/ring10.jpg&quot;);"></li></ul>
+
+
+
+
+
+
+</body></html>

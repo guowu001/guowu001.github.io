@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://guowu001.github.io/apple_menu/apple_menu.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="author" content="">
+<meta name="copyright" content="">
+<title>苹果菜单</title>
+<style>
+* { margin:0; padding:0; }
+
+#div1 { position:absolute; bottom:0; left:0; width:100%; text-align:center; }
+img { width:64px; height:64px; }
+</style>
+<script>
+window.onload=function (){
+	var oDiv=document.getElementById('div1');
+	var aImg=document.getElementsByTagName('img');
+	var maxWidth=128;
+	var maxHeight=128;
+	
+	
+	
+	document.onmousemove=function (ev){
+		var oEvent=ev || event;
+		
+		for (var i=0; i<aImg.length; i++)
+		{
+			var left=aImg[i].offsetLeft;
+			var top=aImg[i].offsetTop+oDiv.offsetTop; 
+			var x=left+aImg[i].offsetWidth/2;
+			var y=top+aImg[i].offsetHeight/2;
+			
+			var a=oEvent.clientX-x;
+			var b=y-oEvent.clientY;
+			
+			var c=Math.sqrt(a*a+b*b);
+			
+			// 感应距离
+			var scale=1-c/500; 
+			(scale<0.5) && (scale=0.5)
+			
+			
+			
+			aImg[i].style.width=scale*maxWidth+'px';
+			aImg[i].style.height=scale*maxHeight+'px';
+		}
+	};
+};
+</script>
+</head>
+
+<body>
+	
+	
+	<div id="div1">
+		<img src="img/1.png" style="width: 64px; height: 64px;">
+		<img src="img/2.png" style="width: 64px; height: 64px;">
+		<img src="img/3.png" style="width: 64px; height: 64px;">
+		<img src="img/4.png" style="width: 64px; height: 64px;">
+		<img src="img/5.png" style="width: 64px; height: 64px;">
+	</div>
+
+
+
+
+
+
+
+
+
+
+</body></html>
