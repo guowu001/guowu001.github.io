@@ -6,13 +6,14 @@ function change(){
 	if(clientW<=1366)
 	{
 		oHeadBg.style.width=1366+'px';
-		
+		oBox.style.display='none';
 	}
 	else
 	{
 		oHeadBg.style.width=100+'%';
 			
 	}
+
 }
 
 window.onresize=function(){
