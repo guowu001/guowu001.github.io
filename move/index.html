@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>运动</title>
+<link rel="stylesheet" href="css/base.css">
+<style>
+	
+	ul{width:300px; height:300px; position:absolute; left:50%; top:50%;  margin:-150px; }
+	li{width:98px; height:98px; background:#F93; border:1px solid #fff; font-size:50px; text-align:center; line-height:100px;}
+	.page_0{position:absolute; top:50%; left:50%; margin:-50px;}
+	.page_1{position:absolute; left:0px; top:0; }
+	.page_2{position:absolute;  left:0; top:100px;}
+	.page_3{position:absolute; left:0; top:200px; }
+	.page_4{position:absolute;  left:100px; top:200px;}
+	.page_5{position:absolute; left:200px; top:200px; }
+	.page_6{position:absolute; left:200px; top:100px; }
+</style>
+<script src="js/move.js"></script>
+<script>
+	window.onload=function(){
+		var aLi=document.querySelectorAll('ul li');
+		var arr=[
+				{left:100,top:0},
+				{left:200,top:0},
+				{left:200,top:100},
+				{left:200,top:200},
+				{left:100,top:200},
+				{left:0,top:200},
+				{left:0,top:100},
+				{left:0,top:0}
+				];
+		function tab(){
+			move(aLi[1],{left:arr[0].left,top:arr[0].top},{duration:200,easing:'ease-in',complete:function(){
+				move(aLi[1],{left:arr[1].left,top:arr[1].top},{duration:150})
+				move(aLi[2],{left:arr[7].left,top:arr[7].top},{duration:200,easing:'ease-in',complete:function(){
+					move(aLi[2],{left:arr[0].left,top:arr[0].top},{duration:150})
+					move(aLi[3],{left:arr[6].left,top:arr[6].top},{duration:200,easing:'ease-in',complete:function(){
+						move(aLi[3],{left:arr[7].left,top:arr[7].top},{duration:150})
+						move(aLi[4],{left:arr[5].left,top:arr[5].top},{duration:200,easing:'ease-in',complete:function(){
+							move(aLi[4],{left:arr[6].left,top:arr[6].top},{duration:150})
+							move(aLi[5],{left:arr[4].left,top:arr[4].top},{duration:200,easing:'ease-in',complete:function(){
+								move(aLi[5],{left:arr[5].left,top:arr[5].top},{duration:150})
+								move(aLi[6],{left:arr[3].left,top:arr[3].top},{duration:200,easing:'ease-in',complete:function(){
+									move(aLi[6],{left:arr[4].left,top:arr[4].top},{duration:150})
+										arr.push(arr.shift());
+										arr.push(arr.shift());						
+								}})	
+							}})	
+						}})			
+					}})			
+				}})	
+			}})
+		}
+		tab()
+		setInterval(tab,1200)
+	}
+</script>
+</head>
+
+<body>
+    <ul>
+        <li class="page_0"></li>
+        <li class="page_1">1</li>
+        <li class="page_2">2</li>
+        <li class="page_3">3</li>
+        <li class="page_4">4</li>
+        <li class="page_5">5</li>
+        <li class="page_6">6</li>
+    </ul>
+</body>
+</html>
