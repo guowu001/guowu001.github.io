@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>医药--文库</title>
+<!--之前的样式--开始----控制头部和底部-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/wk_inc.css" rel="stylesheet" type="text/css" />
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<!--之前的样式--结束----控制头部和底部-->
+<!--lynn_css----on-->
+<link href="css/lynnCss.css" rel="stylesheet" type="text/css" />
+<!--lynn_css----off-->
+<!--lynn_js----on-->
+<!--banner--开始-->
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.jslides.js"></script>
+<!--banner--结束-->
+<!--tab切换js---开始-->
+<script> 
+<!-- 
+/*第一种形式 第二种形式 更换显示样式*/ 
+function setTab(name,cursel,n){ 
+for(i=1;i<=n;i++){ 
+var menu=document.getElementById(name+i); 
+var con=document.getElementById("con_"+name+"_"+i); 
+menu.className=i==cursel?"hover":""; 
+con.style.display=i==cursel?"block":"none"; 
+} 
+} 
+//--> 
+</script> 
+<!--tab切换js---结束-->
+<!--lynn_js----off-->
+</head>
+<body>
+<div class="warp">
+<!--公用头部--开始-->
+  <div class="header">
+    <div class="header_top">
+      <div class="header_top_mage"> <span class="fl">欢迎来到药师在线!
+        &nbsp;&nbsp;<a href="javascript:;" class="color_999">请登录</a> &nbsp;&nbsp;<a href="javascript:;" class="color_999">免费注册</a> </span> <span class="fr"> <a href="javascript:;" class="down_a">我的账户</a> <a href="javascript:;" class="down_a">我的订单</a> <a href="javascript::" class="down_b">购物车</a> <a href="javascript::" >我要买课</a> <a href="javascript:;">激活药师卡</a> <a href="javascript:;">开始学习</a> </span>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="header_middle">
+      <div class="header_middle_main"> <a href="javascript:;" class="fl mr75"><img src="images/logo-2.jpg" height="106" alt="" /></a>
+        <div class="search_box fl">
+          <p>
+            <input type='text' class="searct_text" value="大纲点睛班" />
+            <input type='button' class="searct_btn" value="搜索"/>
+          </p>
+          <p>高级精品班：<a href="javascript:;" class="hover">套包模拟</a><a href="javscript:;">考场真题</a><a href="javscript:;">解析大纲</a><a href="javscript:;">点睛班套包</a> </p>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="header_bottom">
+      <ul class="nav_main">
+        <li><a href="javascript:;">首页</a></li>
+        <li><a href="javascript:;" class="hover" style="background:url(images/navbg2-2.jpg) no-repeat;">药师商城</a></li>
+        <li><a href="javascript:;">报考指南</a></li>
+        <li><a href="javascript:;">复习资料</a></li>
+        <li><a href="javascript:;">师资力量</a></li>
+        <li><a href="javascript:;">活动</a></li>
+        <li><a href="javascript:;">免费试听</a></li>
+        <li><a href="javascript:;">学习桌面</a></li>
+        <li style="float:right;"><img style="margin-top:1px;" src="images/navImg.png" /></li>
+        <div class="clear"></div>
+      </ul>
+    </div>
+    <!--lynn---on-->
+    <div class="l_navFu fl area">
+    <div class="l_navFu_c">
+    <ul>
+    <li><a href="#">首页</a></li>
+    <li><a href="#" style="color:#0474ca; background:url(images/indexIcon07.jpg) no-repeat  75px #cae8ff;">分类</a></li>
+    <li><a href="#">名师专区</a></li>
+    <li><a href="#">机构专区</a></li>
+    </ul>
+     </div>
+    </div> 
+    <div class="l_banner fl area">
+    <div class="area l_bannerTopBoxBig">
+    <div class="l_bannerTopBox">
+    <div class="l_bannerTop">
+    <span>考试资讯<br /><a href="#">报考指南</a> <a href="#">考试动态</a></span>
+    <span>复习备考<br /><a href="#">历年真题</a> <a href="#">模拟试题</a></span>
+    <span>中药学<br /><a href="#">中药学部分</a> <a href="#">中药药剂学</a><br /><a href="#">中药鉴定学</a><a href="#">中药化学</a><br /> <a href="#">中药学综合知识与技能</a><br /><a href="#">药事管理与法规</a></span>
+    <span style="border-bottom:none;">药学<br /><a href="#">药理学</a> <a href="#">药剂学</a><a href="#">药物分析</a><br /><a href="#">药物化学</a><a href="#">综合知识与技能</a><br /><a href="#">药事管理与法规</a></span>
+    </div>
+    </div>
+    </div>
+    <div id="full-screen-slider">
+    <ul id="slides">
+        <li style="background:url('images/bannerImg01.jpg') no-repeat center top"><a href="" target="_blank">1</a></li>
+		<li style="background:url('images/01.jpg') no-repeat center top"><a href="" target="_blank">2</a></li>
+		<li style="background:url('images/02.jpg') no-repeat center top"><a href="" target="_blank">3</a></li>
+	</ul>
+</div>
+    </div>
+     <div class="l_mainTop area fl"></div>
+   <!--lynn---off-->
+  </div>
+  <!--公用头部--结束-->
+  
+  <div class="index_contentbg area fl">
+   <!--lynn---on--> 
+   <div class="l_main">
+   <div class="l_left fl">
+   <div class="l_leftBox fl mb25">
+   <!--<div class="l_headLine fl area">
+   <img class="fl mr10" style="margin-top:10px;" src="images/indexIcon01.jpg" />
+   <h1 class="l_h1">考试资讯</h1>
+   </div>-->
+<div id="Tab1" class="font14"> 
+<div class="Menubox"> 
+<img class="fl mr10" style="margin-top:10px;" src="images/indexIcon01.jpg" />
+   <h1 class="l_h1 fl mr25">考试资讯</h1>
+<ul> 
+<li id="one1" onclick="setTab('one',1,3)" class="hover">报考指南</li> 
+<li id="one2" onclick="setTab('one',2,3)" >考试动态</li> 
+<li id="one3" onclick="setTab('one',3,3)">政策文件</li> 
+</ul> 
+</div> 
+<div class="tabContent"> 
+<div id="con_one_1" class="hover">
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl" style="margin-right:0;">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+</div> 
+<div id="con_one_2" style="display:none">
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+</div> 
+<div id="con_one_3" style="display:none">
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+</div>
+</div> 
+</div>
+   </div>
+   <div class="l_leftBox fl mb25" style="border-bottom:0;">
+   <!--<div class="l_headLine fl area">
+   <img class="fl mr10" style="margin-top:10px;" src="images/indexIcon01.jpg" />
+   <h1 class="l_h1">考试资讯</h1>
+   </div>-->
+<div id="Tab2" class="font14"> 
+<div class="Menubox"> 
+<img class="fl mr10" style="margin-top:10px;" src="images/indexIcon02.jpg" />
+   <h1 class="l_h1 fl mr25">复习备考</h1>
+<ul> 
+<li id="two1" onclick="setTab('two',1,5)" class="hover">名师指导</li> 
+<li id="two2" onclick="setTab('two',2,5)">经验分享</li> 
+<li id="two3" onclick="setTab('two',3,5)">历年真题</li> 
+<li id="two4" onclick="setTab('two',4,5)">模拟试题</li> 
+<li id="two5" onclick="setTab('two',5,5)">考试大纲</li> 
+</ul> 
+</div> 
+<div class="tabContent"> 
+<div id="con_two_1" class="hover">
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl" style="margin-right:0;">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+</div> 
+<div id="con_two_2" style="display:none">
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+</div> 
+<div id="con_two_3" style="display:none">
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+</div>
+<div id="con_two_4" style="display:none">
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+</div> 
+<div id="con_two_5" style="display:none">
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+<ul class="l_leftCntBox fl">
+<div><a href="#"><img src="images/img01.jpg" /></a></div>
+<li class="l_colorBlack">执业药师考试说明<br />（2014）</li>
+<li>2014人阅读</li>
+</ul>
+</div>
+</div> 
+</div>
+   </div>
+   </div>
+   <div class="l_right fr">
+   <h2 class="l_h2 l_colorBlack">最新动态</h2>
+   <ul class="l_rightBox area fl">
+   <li>
+   <div class="fl mr10"><a href="#"><img src="images/img02.jpg" /></a></div>
+   <dl>
+   <dt><a href="#" class="font14">宿凌</a></dt>
+   <dd class="font12">博士，副教授</dd>
+   </dl>
+   <span class="area fl font12 l_colorBlack">上传《药事管理与法规》...</span>
+   </li> 
+   <li>
+   <div class="fl mr10"><a href="#"><img src="images/img02.jpg" /></a></div>
+   <dl>
+   <dt><a href="#" class="font14">宿凌</a></dt>
+   <dd class="font12">博士，副教授</dd>
+   </dl>
+   <span class="area fl font12 l_colorBlack">上传《药事管理与法规》...</span>
+   </li> 
+   <li>
+   <div class="fl mr10"><a href="#"><img src="images/img02.jpg" /></a></div>
+   <dl>
+   <dt><a href="#" class="font14">宿凌</a></dt>
+   <dd class="font12">博士，副教授</dd>
+   </dl>
+   <span class="area fl font12 l_colorBlack">上传《药事管理与法规》...</span>
+   </li> 
+   <li>
+   <div class="fl mr10"><a href="#"><img src="images/img02.jpg" /></a></div>
+   <dl>
+   <dt><a href="#" class="font14">宿凌</a></dt>
+   <dd class="font12">博士，副教授</dd>
+   </dl>
+   <span class="area fl font12 l_colorBlack">上传《药事管理与法规》...</span>
+   </li> 
+   <li>
+   <div class="fl mr10"><a href="#"><img src="images/img02.jpg" /></a></div>
+   <dl>
+   <dt><a href="#" class="font14">宿凌</a></dt>
+   <dd class="font12">博士，副教授</dd>
+   </dl>
+   <span class="area fl font12 l_colorBlack">上传《药事管理与法规》...</span>
+   </li> 
+   </ul>
+   </div>
+   <img class="fl area" style="margin:30px 0;" src="images/cut01.jpg" />
+   <div class="l_left fl">
+   <div class="l_leftBox fl mb25" style="height:200px;">
+<div id="Tab3" class="font14" style="height:200px;"> 
+<div class="Menubox"> 
+<img class="fl mr10" style="margin-top:10px;" src="images/indexIcon03.jpg" />
+   <h1 class="l_h1 fl mr25">中药学</h1>
+<ul> 
+<li id="three1" onclick="setTab('three',1,5)" class="hover">中药学</li> 
+<li id="three2" onclick="setTab('three',2,5)">中药药剂学</li> 
+<li id="three3" onclick="setTab('three',3,5)">中药鉴定学</li> 
+<li id="three4" onclick="setTab('three',4,5)">中药化学</li> 
+<li id="three5" onclick="setTab('three',5,5)" style="width:180px;">中药学综合知识与技能</li>
+</ul> 
+</div> 
+<div class="tabContent"> 
+<div id="con_three_1" class="hover">
+<ul class="l_leftCntBox02 fl area">
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值<!--限制最多13个字符--></a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+</ul>
+</div> 
+<div id="con_three_2" style="display:none">
+<ul class="l_leftCntBox02 fl area">
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值<!--限制最多13个字符--></a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+</ul>
+</div> 
+<div id="con_three_3" style="display:none">
+<ul class="l_leftCntBox02 fl area">
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值<!--限制最多13个字符--></a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+</ul>
+</div>
+<div id="con_three_4" style="display:none">
+<ul class="l_leftCntBox02 fl area">
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值<!--限制最多13个字符--></a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+</ul>
+</div> 
+<div id="con_three_5" style="display:none">
+<ul class="l_leftCntBox02 fl area">
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值<!--限制最多13个字符--></a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+</ul>
+</div>
+</div> 
+</div>
+   </div>
+   <div class="l_leftBox fl mb25" style="height:200px;">
+<div id="Tab4" class="font14" style="height:200px;"> 
+<div class="Menubox"> 
+<img class="fl mr10" style="margin-top:10px;" src="images/indexIcon04.jpg" />
+   <h1 class="l_h1 fl mr25">药学</h1>
+<ul> 
+<li id="four1" onclick="setTab('four',1,5)" class="hover">药理学</li> 
+<li id="four2" onclick="setTab('four',2,5)">药剂学</li> 
+<li id="four3" onclick="setTab('four',3,5)">药物分析</li> 
+<li id="four4" onclick="setTab('four',4,5)">药物化学</li> 
+<li id="four5" onclick="setTab('four',5,5)" style="width:180px;">药学综合知识与技能</li>
+</ul> 
+</div> 
+<div class="tabContent"> 
+<div id="con_four_1" class="hover">
+<ul class="l_leftCntBox02 fl area">
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+</ul>
+
+</div> 
+<div id="con_four_2" style="display:none">
+<ul class="l_leftCntBox02 fl area">
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值<!--限制最多13个字符--></a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+</ul>
+</div> 
+<div id="con_four_3" style="display:none">
+<ul class="l_leftCntBox02 fl area">
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值<!--限制最多13个字符--></a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+</ul>
+</div>
+<div id="con_four_4" style="display:none">
+<ul class="l_leftCntBox02 fl area">
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值<!--限制最多13个字符--></a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+</ul>
+</div> 
+<div id="con_four_5" style="display:none">
+<ul class="l_leftCntBox02 fl area">
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值<!--限制最多13个字符--></a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+</ul>
+</div>
+</div> 
+</div>
+   </div>
+   <div class="l_leftBox fl mb25" style="height:200px; border-bottom:none;">
+<div id="Tab5" class="font14" style="height:200px;"> 
+<div class="Menubox"> 
+<img class="fl mr10" style="margin-top:10px;" src="images/indexIcon05.jpg" />
+<h1 class="l_h1 fl mr25">药事管理与法规</h1>
+</div> 
+<div class="tabContent"> 
+<div id="con_four_1" class="hover">
+<ul class="l_leftCntBox02 fl area">
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">麻黄的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">荷叶的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+<li><img class="fl" style="margin:9px 10px 0 20px;" src="images/indexIcon06.jpg" /><a href="#">当归的药性及食用价值</a></li>
+</ul>
+</div> 
+</div> 
+</div>
+   </div>
+   </div>
+   <div class="l_right fr">
+ <h2 class="l_h2 l_colorBlack">热门文档</h2>
+<ul class="list01 area fl font12">
+<li>1、<a href="#">麻黄的药性及食用价值</a></li>
+<li>2、<a href="#">荷叶的药性及食用价值</a></li>
+<li>3、<a href="#">当归的药性及食用价值</a></li>
+<li>4、<a href="#">药物与受体的概念及特性</a></li>
+<li>5、<a href="#">抗微生物药的主要作用机制</a></li>
+<li>6、<a href="#">麻黄的药性及食用价值</a></li>
+<li>7、<a href="#">荷叶的药性及食用价值</a></li>
+<li>8、<a href="#">当归的药性及食用价值</a></li>
+<li>9、<a href="#">药物与受体的概念及特性</a></li>
+<li>10、<a href="#">抗微生物药的主要作用机制</a></li>
+</ul>
+   </div>
+   </div>
+   <!--lynn---off--> 
+  </div>
+  <!--公用尾部--开始-->
+  <div class="footer2 fl area" style="border-top:1px solid #ddd;">
+    <div class="footer_main">
+      <div footer_table>
+        <table width="100%" align="center">
+          <tr>
+            <td><div class="title3" style="font-size:18px; font-weight:normal; margin:15px 0 0 0;">帮助中心</div>
+              <ul class="tooter_ul">
+                <li><a href="#">注册指南</a></li>
+                <li><a href="#">购买支付</a></li>
+                <li><a href="#">听课练习</a></li>
+                <li><a href="#">优惠券使用</a></li>
+              </ul></td>
+            <td><div class="title3" style="font-size:18px; font-weight:normal; margin:15px 0 0 0;">特色服务</div>
+              <ul class="tooter_ul">
+                <li><a href="#">免费试听</a></li>
+                <li><a href="#">无条件退款</a></li>
+                <li><a href="#">主编公开课</a></li>
+                <li> <a href="#">执业药师大赛</a></li>
+              </ul></td>
+            <td><div class="title3" style="font-size:18px; font-weight:normal; margin:15px 0 0 0;">主要栏目</div>
+              <ul class="tooter_ul">
+                <li><a href="#">在线课程</a></li>
+                <li> <a href="#">模拟考试</a></li>
+                <li> <a href="#">报考指南</a></li>
+                <li><a href="#">师资力量</a></li>
+              </ul></td>
+            <td><div class="title3" style="font-size:18px; font-weight:normal; margin:15px 0 0 0;">推荐活动</div>
+              <ul class="tooter_ul">
+                <li><a href="#">书款抵扣</a></li>
+                <li><a href="#">月听越精彩</a></li>
+                <li><a href="#">微信活动</a></li>
+                <li><a href="#">注册有奖</a></li>
+              </ul></td>
+            <td><div class="title3" style="font-size:18px; font-weight:normal; margin:15px 0 0 0;">关于我们</div>
+              <ul class="tooter_ul">
+                <li><a href="#">了解我们</a></li>
+                <li><a href="#">加入我们</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">意见反馈</a></li>
+              </ul></td>
+          </tr>
+        </table>
+      </div>
+      <div class="footer_con">
+     	<div class="link_left fl">
+        	<span><img src="images/tel.jpg" />客服电话：400-099-0981</span>
+            <span><img src="images/xin.jpg" />客服邮箱：kefu@cmstpx.com</span>
+            <span><img src="images/qq.jpg" />QQ交流群：341406482</span>
+        </div> 
+        
+        <div class="link_right fr">
+        	<span><img src="images/gz.jpg" />+ 关注</span>
+            <span><img src="images/wx.jpg" />+ 微信</span>
+            <span><img src="images/zoin.jpg" />+ QQ空间</span>
+        </div> 
+     	
+      </div>
+      <div class="clear"></div>
+     	<p><b>友情链接：</b><a href="javascript:;"> 中国医药科技出版社 </a>   <a href="javascript:;">    国家食品药品监督管理总局</a>    <a href="javascript:;">        国家执业药师考试认证中心</a>    <a href="javascript:;">       国家新闻出版广电总局</a><a href="javascript:;">     国家财政部</a></p>
+       
+        <p>Copyright © 2006 - 2014 CMSTP Co.,Ltd All Rights Reserved. <br />
+中国医药科技出版社  版权所有ICP备案编号：京ICP备09098116号 | 京公网安备11010802009134号</p>
+<p><a href="javascript:;"><img src='images/bottom_logo.jpg' alt="" /></a>
+	<a href="javascript:;"><img src='images/bottom_logo2.jpg' alt="" /></a>
+</p>
+      </div>
+    </div>
+      <!--公用尾部--结束-->
+  </div>
+
+</body>
+</html>
