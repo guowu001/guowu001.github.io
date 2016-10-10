@@ -56,7 +56,7 @@ h2.name{ color:#b46b6b}
 .JS{ width:80%; background:url(../images/bar_bg2.png);}
 .C3H5{ width:70%; background:url(../images/bar_bg3.png);}
 .other{ width:60%; background:url(../images/bar_bg4.png);}
-.webProTit h4{margin-left:-200px;}
+
 /*toUp*/
 .toUpBox{ display:none; position:fixed; right:40px; bottom:60px; z-index:1000; width:43px; height:43px;}
 .toUpBox a{ display:block; width:41px; height:41px; border:1px solid #eee; margin-top:-1px; background:url(../images/toUp.jpg)}
